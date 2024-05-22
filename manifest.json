@@ -1,9 +1,9 @@
 {
-  "name": "google-customer-reviews",
-  "vendor": "vtex",
-  "version": "1.1.1",
-  "title": "Google Customer Reviews",
-  "description": "This application allows Google to collect and post comments from customers who have made a purchase on your website.",
+  "name": "profit-metrics",
+  "vendor": "jefferspet",
+  "version": "0.0.1",
+  "title": "Profit Metrics",
+  "description": "This application provides integration with Profit Metrics, allowing it to send orders and capture user behavior.",
   "billingOptions": {
     "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
     "support": {
@@ -26,60 +26,12 @@
     "vtex.css-handles": "1.x"
   },
   "settingsSchema": {
-    "title": "Google Customer Reviews",
+    "title": "Profit Metrics",
     "type": "object",
     "properties": {
-      "merchantId": {
-        "title": "Merchant ID",
+      "pid": {
+        "title": "PID",
         "type": "string"
-      },
-      "passGtin": {
-        "title": "Pass GTINs",
-        "type": "boolean",
-        "default": true
-      },
-      "optInStyle": {
-        "title": "Opt-in style",
-        "description": "Specifies how the opt-in module's dialog box is displayed",
-        "type": "string",
-        "default": "CENTER_DIALOG",
-        "enum": [
-          "CENTER_DIALOG",
-          "BOTTOM_RIGHT_DIALOG",
-          "BOTTOM_LEFT_DIALOG",
-          "TOP_RIGHT_DIALOG",
-          "TOP_LEFT_DIALOG",
-          "BOTTOM_TRAY"
-        ],
-        "enumNames": [
-          "Center",
-          "Bottom right",
-          "Bottom left",
-          "Top right",
-          "Top left",
-          "Bottom"
-        ]
-      },
-      "showBadge": {
-        "title": "Show badge",
-        "type": "boolean",
-        "default": true
-      },
-      "badgePosition": {
-        "title": "Badge position",
-        "description": "Renders the badge in one of the following locations",
-        "type": "string",
-        "default": "BOTTOM_RIGHT",
-        "enum": [
-          "BOTTOM_RIGHT",
-          "BOTTOM_LEFT",
-          "INLINE"
-        ],
-        "enumNames": [
-          "Float in the bottom right",
-          "Float in the bottom left",
-          "Block position"
-        ]
       }
     }
   },

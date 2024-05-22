@@ -1,0 +1,16 @@
+<script>
+  window.profitMetrics = {
+    pid: "{{settings.pid}}",
+    emailInputSelector: '#newsletter-input-email',
+    setEmail: (customerEmail) => {
+      const email = customerEmail;
+      if (email && email.includes('@') && email.includes('.') && !/\s/.test(email)) {
+          profitMetrics.setEmail(email);
+      }
+    }
+  };
+  const scriptElement = document.createElement('script');
+  scriptElement.src = `https://cdn1.profitmetrics.io/${window.profitMetrics.pid}/bundle.js`;
+  scriptElement.defer = true;
+  document.head.appendChild(scriptElement);
+</script>

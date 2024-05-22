@@ -161,6 +161,7 @@ export interface Order {
   coupon: string
   visitorType: string
   visitorContactInfo: string[]
+  visitorContactPhone: string
   visitorAddressState: string
   visitorAddressCountry: string
   visitorAddressPostalCode: string

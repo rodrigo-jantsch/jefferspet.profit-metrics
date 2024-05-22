@@ -1,22 +1,11 @@
 interface Window extends Window {
-  __google_customer_reviews: {
-    merchantId: MerchantId
-    passGtin: 'true' | 'false'
-    optInStyle:
-      | 'CENTER_DIALOG'
-      | 'BOTTOM_RIGHT_DIALOG'
-      | 'BOTTOM_LEFT_DIALOG'
-      | 'TOP_RIGHT_DIALOG'
-      | 'TOP_LEFT_DIALOG'
-      | 'BOTTOM_TRAY'
-    showBadge: 'true' | 'false'
-    badgePosition: 'BOTTOM_RIGHT' | 'BOTTOM_LEFT' | 'INLINE'
+  profitMetrics: {
+    pid: PID
+    setEmail: (customerEmail: string) => void;
   }
-  gapi: GoogleAPI
-  renderOptIn: () => void
 }
 
-type MerchantId = string
+type PID = string
 
 interface GoogleAPI {
   load: (event: string, callback: () => void) => void

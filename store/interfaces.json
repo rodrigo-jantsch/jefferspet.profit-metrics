@@ -1,8 +1,5 @@
 {
-  "pixel.google-customer-reviews": {
+  "pixel.profit-metrics": {
     "component": "index"
-  },
-  "google-customer-review-badge": {
-    "component": "Badge"
   }
 }
