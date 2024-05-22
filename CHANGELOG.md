@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.2] - 2024-05-22
+
 ## [1.1.1] - 2021-01-14
 ### Fixed
 - Update the app documentation (README.md file) to reflect the lastest update regarding the new badge block.
